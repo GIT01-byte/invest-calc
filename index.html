@@ -8,43 +8,41 @@
 </head>
 <body>
     <div class="calc__body">
-        <div class="calc">
-            <header>
-                <h2 class="calc__title">Оцените рост ваших инвестиций</h2>
-            </header>
-            <img src="./img/image1.png" alt="не удалось загурзить картинку" class="calc__img">
-            <div class="calc__item calc__item--start">
-                <span class="calc__label">
-                    Начальная сумма
-                </span>
-                <input class="calc__value">
-            </div>
-            <div class="calc__item calc__item--duration">
-                <span class="calc__label">
-                    Длительность, лет
-                </span>
-                <input class="calc__value">
-            </div>
-            <div class="calc__result">
-                <span class="calc__result-label">
-                    Результирующий баланс
-                </span>
-                <p class="calc__result-value"></p>
-            </div>
+        <header class="calc__title">
+            <h2 class="calc__title title__text">Оцените рост ваших инвестиций</h2>
+        </header>
+        <img src="./img/image1.png" alt="не удалось загурзить картинку" class="calc__img">
+        <div class="calc__item calc__item--start">
+            <span class="calc__label">
+                Начальная сумма
+            </span>
+            <input class="calc__value">
         </div>
-        <div class="help">
-            <header class="help__title">
-                <h2 class="help__title">Как работает калькулятор</h2>
-            </header>
-            <aside class="help__image">
-                <img src="./img/image2.png" alt="не удалось загурзить картинку" class="help__image">
-            </aside> 
-            <article class="help__text">
-                <p class="help__text">
-                    Калькулятор рассчитывает сумму через определенный срок, предполагая годовую доходность 12%.
-                </p>
-            </article>
+        <div class="calc__item calc__item--duration">
+            <span class="calc__label">
+                Длительность, лет
+            </span>
+            <input class="calc__value">
         </div>
+        <div class="calc__result">
+            <span class="calc__result-label">
+                Результирующий баланс
+            </span>
+            <span class="calc__result-value"></span>
+        </div>
+    </div>
+    <div class="help">
+        <header class="help__title">
+            <h2 class="help__title">Как работает калькулятор</h2>
+        </header>
+        <aside class="help__image">
+            <img src="./img/image2.png" alt="не удалось загурзить картинку" class="help__image">
+        </aside> 
+        <article class="help__text">
+            <p class="help__text">
+                Калькулятор рассчитывает сумму через определенный срок, предполагая годовую доходность 12%.
+            </p>
+        </article>
     </div>
     <script src="./main.js"></script>
 </body>

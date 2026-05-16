@@ -19,7 +19,8 @@
     font-style: normal;
     font-display: swap;
 }
-.calc {
+
+.calc__body {
     width: 100%;
     max-width: 1165px;
     margin: 0 auto;
@@ -35,6 +36,8 @@
     grid-row: 1/2;
     margin: 0;
     padding: 0;
+}
+.title__text {
     font-family: "NeverSmile";
     font-size: 40px;
     line-height: 40px;
@@ -110,10 +113,84 @@
 .help__text {
     grid-column: 2/3;
     grid-row: 2/4;
-    justify-self: center;
-    align-self: center;
     font-family: "Rostov";
     font-size: 25px;
     line-height: 26px;
     color: grey;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+    .calc__body {
+        margin-left: 5px;
+        margin-right: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 0.2fr);
+    }
+    .calc__title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .calc__img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .calc__item--start {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .calc__item--duration {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .calc__result {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .help {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0.1fr);
+    }
+    .help__title {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .help__image {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .help__text {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .title__text {
+        font-size: 35px;
+    }
+    .calc__label {
+        font-size: 21px;
+    }
+    .calc__value {
+        font-size: 25px;
+        padding-right: 0px;
+    }
+    .calc__result-label {
+        font-size: 23px;
+    }
+    .calc__result-value {
+        font-size: 30px;
+    }
+    .help__title {
+        font-size: 35px;
+    }
+    .help__text {
+        font-size: 21px;
+    }
 }
