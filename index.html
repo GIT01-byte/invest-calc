@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <main>
+    <div class="calc__body">
         <div class="calc">
             <header>
                 <h2 class="calc__title">Оцените рост ваших инвестиций</h2>
@@ -17,25 +17,19 @@
                 <span class="calc__label">
                     Начальная сумма
                 </span>
-                <p class="calc__value">
-                    500000
-                </p>
+                <input class="calc__value">
             </div>
             <div class="calc__item calc__item--duration">
                 <span class="calc__label">
                     Длительность, лет
                 </span>
-                <p class="calc__value">
-                    3
-                </p>
+                <input class="calc__value">
             </div>
             <div class="calc__result">
                 <span class="calc__result-label">
                     Результирующий баланс
                 </span>
-                <p class="calc__result-value">
-                    12000
-                </p>
+                <p class="calc__result-value"></p>
             </div>
         </div>
         <div class="help">
@@ -51,6 +45,7 @@
                 </p>
             </article>
         </div>
-    </main>
+    </div>
+    <script src="./main.js"></script>
 </body>
 </html>
